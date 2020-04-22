@@ -1,0 +1,35 @@
+/*page:good/web/pages/user/index.html*/
+body ,*{
+    padding: 0;
+    margin: 0;
+    font-family: "Micorsoft YaHei", Helvetica, Arial, sans-serif;
+}
+.clearfix:after{
+    display: block;
+    overflow: hidden;
+    content:'';
+    clear: both;
+    visibility:hidden;
+}
+.page-index .index-top{
+    border-bottom: 1px solid #f0f0f0;
+    background: #0f8dec;
+    padding: 20px ;
+}
+.page-index .index-title{
+    font-size: 16px;
+    float: left;
+    font-weight: bold;
+    color: #fff;
+}
+.page-index .login-href,
+.page-index .regist-href
+{
+    font-size: 14px;
+    float: right;
+    color: #fff;
+    margin-left: 20px;
+}
+.page-index .login-href{
+    color: #eee;
+}

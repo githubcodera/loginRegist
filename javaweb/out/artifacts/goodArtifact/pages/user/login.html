@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="http://localhost:8080/good/">
+    <script type="text/javascript" src="static/js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+                $("#sub_btn").click(function(){
+                    var usernameText = $("$username").val();
+                    var usernamePatt=/^w{5,12}$/;
+                    if(!usernameText.test(usernameText)){
+                        $("span.errorMsg").text("用户名不合法");
+                        return false;
+                    }
+
+                    if(repwdText !=passwordText){
+                        $("span.errorMsg").text("密码和确认密码不相同");
+                        return false;
+                    }
+
+                    var repwdText = $("#repwd").val();
+                    var passwordText = $("#password").val();
+                    var passwordPatt = /^\w{5,12}$/;
+                    if(!passwordPatt.test(passwordText)){
+                        $("span.errorMsg").text("密码不合法");
+                        return false;
+                    }
+                    if(repwdText !=passwordText){
+                        $("span.errorMsg").text("密码和确认密码不相同");
+                        return false;
+                    }
+                })
+            }
+        );
+    </script>
+</head>
+<body>
+<span class="errorMsg"></span>
+<form action="/regist">
+    <lable>用户名称：</lable><input type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" id="username" />
+    <br />
+    <lable>用户密码：</lable><input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password" id="password" />
+    <br />
+
+    <!--<lable>邮箱账号：</lable><input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password" id="password" />-->
+
+    <button type="button" id="sub_btn">登录</button>
+</form>
+</body>
+</html>

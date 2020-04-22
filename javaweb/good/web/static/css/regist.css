@@ -1,0 +1,51 @@
+/*page:good/web/pages/user/regist.html*/
+.regist-form {
+    width: 360px;
+    margin: 60px auto 0;
+}
+
+.regist-form div {
+    margin-bottom: 20px;
+}
+
+.regist-form div label {
+    font-size: 14px;
+    float: left;
+    width: 76px;
+    text-align: right;
+    height: 32px;
+    line-height: 32px;
+}
+
+.regist-form div input {
+    height: 26px;
+    line-height: 26px;
+    border-radius: 4px;
+    outline: none;
+    background: none;
+    text-indent: 6px;
+    width: 200px;
+    margin-left: 16px;
+}
+
+.regist-form button {
+    display: block;
+    margin: 40px auto 0;
+    background: none;
+    height: 32px;
+    line-height: 30px;
+    outline: none;
+    border: 1px solid #0f8dec;
+    text-align: center;
+    color: #fff;
+    background: #0f8dec;
+    font-size: 14px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.regist-form button:hover {
+    border: 1px solid #2984c9;
+    background: #2984c9;
+}

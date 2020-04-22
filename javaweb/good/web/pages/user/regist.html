@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <base href="http://localhost:8080/good/">
+    <link rel="stylesheet" type="text/css" href="static/css/regist.css" />
+</head>
+<body>
+<div class="regist-page">
+    <div class="regist-form">
+        <span class="errorMsg"></span>
+        <form action="registServlet" method="post">
+            <div>
+                <label>用户名称</label>
+                <input type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" id="username"/>
+            </div>
+            <div>
+                <label>用户密码</label>
+                <input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password"
+                       id="password"/>
+            </div>
+            <div>
+                <label>确认密码</label>
+                <input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password" id="repwd"/>
+            </div>
+
+            <div>
+                <label>验证码</label>
+                <input class="itxt" type="text" name="code" id="code"/>
+                <span>abcde</span>
+            </div>
+            <!--<label>邮箱账号：</label><input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password" id="password" />-->
+
+            <button type="submit" id="sub_btn">注册</button>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="static/js/jquery-3.5.0.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+            $("#sub_btn").click(function () {
+                var usernameText = $("$username").val();
+                var usernamePatt = /^w{5,12}$/;
+                if (!usernameText.test(usernameText)) {
+                    alert("用户名不合法");
+                    $("span.errorMsg").text("用户名不合法");
+                    return false;
+                }
+
+
+
+                var repwdText = $("#repwd").val();
+                var passwordText = $("#password").val();
+                var passwordPatt = /^\w{5,12}$/;
+                if (!passwordPatt.test(passwordText)) {
+                    alert("密码不合法");
+                    $("span.errorMsg").text("密码不合法");
+                    return false;
+                }
+                if (repwdText != passwordText) {
+                    alert("密码和确认密码不相同");
+                    $("span.errorMsg").text("密码和确认密码不相同");
+                    return false;
+                }
+            })
+        }
+    );
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="http://localhost:8080/good/">
+    <script type="text/javascript" src="static/js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+                $("#sub_btn").click(function () {
+                    var usernameText = $("$username").val();
+                    var usernamePatt = /^w{5,12}$/;
+                    if (!usernameText.test(usernameText)) {
+                        alert("用户名不合法");
+                        $("span.errorMsg").text("用户名不合法");
+                        return false;
+                    }
+
+
+
+                    var repwdText = $("#repwd").val();
+                    var passwordText = $("#password").val();
+                    var passwordPatt = /^\w{5,12}$/;
+                    if (!passwordPatt.test(passwordText)) {
+                        alert("密码不合法");
+                        $("span.errorMsg").text("密码不合法");
+                        return false;
+                    }
+                    if (repwdText != passwordText) {
+                        alert("密码和确认密码不相同");
+                        $("span.errorMsg").text("密码和确认密码不相同");
+                        return false;
+                    }
+                })
+            }
+        );
+    </script>
+    <style type="text/css">
+        .regist-form {
+            width: 360px;
+            margin: 60px auto 0;
+        }
+        .regist-form div{
+            margin-bottom: 20px;
+        }
+        .regist-form div label{
+            font-size: 14px;
+            float: left;
+            width: 76px;
+            text-align:right;
+            height: 32px;
+            line-height: 32px;
+        }
+        .regist-form div input{
+            height: 26px;
+            line-height: 26px;
+            border-radius: 4px;
+            outline: none;
+            background:none;
+            text-indent: 6px;
+            width: 200px;
+            margin-left: 16px;
+        }
+        .regist-form button{
+            display: block;
+            margin: 40px auto 0;
+            background: none;
+            height: 32px;
+            line-height:30px;
+            outline: none;
+            border: 1px solid #0f8dec;
+            text-align:center;
+            color: #fff;
+            background: #0f8dec;
+            font-size: 14px;
+            width: 90px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .regist-form button:hover{
+            border: 1px solid #2984c9;
+            background: #2984c9;
+        }
+    </style>
+</head>
+<body>
+<div class="regist-page">
+    <div class="regist-form">
+        <span class="errorMsg"></span>
+        <form action="registServlet" method="post">
+            <div>
+                <label>用户名称</label>
+                <input type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" id="username"/>
+            </div>
+            <div>
+                <label>用户密码</label>
+                <input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password"
+                       id="password"/>
+            </div>
+            <div>
+                <label>确认密码</label>
+                <input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password" id="repwd"/>
+            </div>
+
+            <div>
+                <label>验证码</label>
+                <input class="itxt" type="text" name="code" id="code"/>
+                <span>abcde</span>
+            </div>
+            <!--<label>邮箱账号：</label><input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password" id="password" />-->
+
+            <button type="submit" id="sub_btn">注册</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
