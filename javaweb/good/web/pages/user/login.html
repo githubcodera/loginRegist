@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <title>登录</title>
     <base href="http://localhost:8080/good/">
-    <link rel="stylesheet" type="text/css" href="static/css/regist.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/regist.css"/>
 </head>
 <body>
-<span class="errorMsg"></span>
-<form action="/regist">
-    <div><lable>用户名称：</lable><input type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" id="username" />
+<div class="page-login">
+    <div class="login-form">
+        <span class="errorMsg"></span>
+        <form action="loginServlet" method="post">
+            <div>
+                <lable>用户名称：</lable>
+                <input type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" id="username"/>
+            </div>
+            <div>
+                <lable>用户密码：</lable>
+                <input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password"
+                       id="password"/>
+            </div>
+            <!--<lable>邮箱账号：</lable><input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password" id="password" />-->
+            <button type="submit" id="sub_btn">登录</button>
+        </form>
     </div>
-    <div><lable>用户密码：</lable><input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password" id="password" />
-    </div>
-    <!--<lable>邮箱账号：</lable><input type="password" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="password" id="password" />-->
+</div>
+<script type="text/javascript" src="static/js/jquery-3.5.0.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+            $("#sub_btn").click(function () {
+                var usernameText = $("#username").val();
+                var passwordText = $("#password").val();
+            })
+        }
+    );
+</script>
 
-    <button type="button" id="sub_btn">登录</button>
-    <script type="text/javascript" src="static/js/jquery-3.5.0.min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-                $("#sub_btn").click(function(){
-                    var usernameText = $("$username").val();
-                    var passwordText = $("#password").al();
-                })
-            }
-        );
-    </script>
-</form>
 </body>
 </html>

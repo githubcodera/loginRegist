@@ -1,13 +1,14 @@
 /*page:good/web/pages/user/regist.html*/
+.login-form,
 .regist-form {
     width: 360px;
     margin: 60px auto 0;
 }
-
+.login-form  div,
 .regist-form div {
     margin-bottom: 20px;
 }
-
+.login-form  div label,
 .regist-form div label {
     font-size: 14px;
     float: left;
@@ -16,7 +17,7 @@
     height: 32px;
     line-height: 32px;
 }
-
+.login-form  div input,
 .regist-form div input {
     height: 26px;
     line-height: 26px;
@@ -27,7 +28,7 @@
     width: 200px;
     margin-left: 16px;
 }
-
+.login-form button,
 .regist-form button {
     display: block;
     margin: 40px auto 0;
@@ -44,7 +45,7 @@
     cursor: pointer;
     border-radius: 4px;
 }
-
+.login-form button:hover,
 .regist-form button:hover {
     border: 1px solid #2984c9;
     background: #2984c9;
