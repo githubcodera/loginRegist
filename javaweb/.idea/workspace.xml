@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67cc1485-d276-4f5b-8066-68be785222ff" name="Default Changelist" comment="" />
+    <list default="true" id="67cc1485-d276-4f5b-8066-68be785222ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/good/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/good/web/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,15 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/good/src/com/code/pojo/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/good/src/com/code/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,11 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/good/src/com/code/dao/impl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="135">
+              <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/good/web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -139,11 +141,11 @@
         <option value="$PROJECT_DIR$/good/src/com/code/web/RegistServlet.java" />
         <option value="$PROJECT_DIR$/good/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/good/web/index.jsp" />
-        <option value="$PROJECT_DIR$/good/web/index.html" />
         <option value="$PROJECT_DIR$/good/web/static/css/index.css" />
         <option value="$PROJECT_DIR$/good/src/com/code/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/good/src/com/code/servlet/HelloServlet.java" />
         <option value="$PROJECT_DIR$/good/src/com/code/test/UserDaoTest.java" />
+        <option value="$PROJECT_DIR$/good/web/index.html" />
       </list>
     </option>
   </component>
@@ -315,7 +317,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587534829104" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587535694879" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -500,7 +502,7 @@
       <workItem from="1587521885032" duration="1974000" />
       <workItem from="1587523896090" duration="4353000" />
       <workItem from="1587528284784" duration="4326000" />
-      <workItem from="1587532919050" duration="1908000" />
+      <workItem from="1587532919050" duration="2533000" />
     </task>
     <servers />
   </component>
@@ -525,7 +527,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16490000" />
+    <option name="totallyTimeSpent" value="17115000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -681,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/good/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="41" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/good/src/com/code/dao/impl/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-377">
@@ -776,8 +771,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/good/src/com/code/dao/impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="135">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
